@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+}
+
+#terminal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    color: white;
+    left: 20%;
+    height: 50vh;
+    row-gap: 20px;
+}
+
+textarea {
+    background-color: black;
+    color: white;
+    resize: none;
+    padding: none;
+    border-style: outset dotted;
+    border-width: 10px;
+    border-radius: 25%;
+    border-color: white;
+    font-size: 2em;
+    height: 10vh;
+    text-align: center;
+    line-height: 10vh;
+    scrollbar-width: none;
+}
+
+textarea:focus-visible {
+    outline: none;
+}
+
+#history {
+    flex: 1;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    text-wrap: nowrap;
+    overflow-x: auto;
+    color: white;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    font-size: 2em;
+}
